@@ -1,0 +1,2 @@
+include ':app', ':easyalertdialog2'
+rootProject.name='EasyAlertDialog'
