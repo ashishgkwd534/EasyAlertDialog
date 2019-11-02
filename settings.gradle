@@ -1,2 +1,2 @@
-include ':app', ':easyalertdialog2'
+include ':app', ':easyalertdialoglibrary'
 rootProject.name='EasyAlertDialog'
