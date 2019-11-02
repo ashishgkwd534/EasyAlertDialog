@@ -7,8 +7,18 @@ Using this library user can easily show alert dialog using single function
 
 If you're using a Gradle-based project, then you can add SCV as a dependency directly:
 
+**Step 1:** Add it in your root build.gradle at the end of repositories:
 ~~~
-compile 'com.github.amlcurran.showcaseview:library:5.4.3'
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+~~~
+**Step 2:** Add the dependency
+~~~
+implementation 'com.github.ashishgkwd534:EasyAlertDialog:Tag'
 ~~~
 
 # Usage
