@@ -1,4 +1,20 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+apply plugin: 'signing'
+
+ext {
+    PUBLISH_DESCRIPTION = 'LoaderView Android SDK'
+    PUBLISH_URL = 'https://github.com/ashishgkwd534/EasyAlertDialog'
+    PUBLISH_LICENSE_NAME = 'MIT License'
+    PUBLISH_LICENSE_URL = 'https://github.com/ashishgkwd534/EasyAlertDialog/blob/master/LICENSE'
+    PUBLISH_DEVELOPER_ID = 'ashishgkwd534'
+    PUBLISH_DEVELOPER_NAME = 'Ashish Gaikwad'
+    PUBLISH_DEVELOPER_EMAIL = 'ashishgaikwad534@gmail.com'
+    PUBLISH_SCM_CONNECTION = 'scm:git:github.com/ashishgkwd534/EasyAlertDialog.git'
+    PUBLISH_SCM_DEVELOPER_CONNECTION = 'scm:git:ssh://github.com/ashishgkwd534/EasyAlertDialog.git'
+    PUBLISH_SCM_URL = 'https://github.com/ashishgkwd534/EasyAlertDialog/tree/master'
+}
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
 
 android {
     compileSdkVersion 32
